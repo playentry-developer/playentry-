@@ -1,3 +1,6 @@
+//Entblocks 1.0 기반 블록입니다
+//모든 코드는 2차 제작, 2차 배포 가능합니다
+//스페셜블록은 무료로 제공됩니다. (단, 광고가 있을 수 있습니다)
 Entry.staticBlocks = [
 {
 category: 'start',
@@ -745,7 +748,7 @@ return script.callReturn()
 ////////////////////
 
 ////////////////////
-addBlock('entry_console_clear', '스폐셜블럭들을 만들사람은 ian이고, 기타 블록 제작자는 ian입니다.%1', {
+addBlock('entry_console_clear', '스폐셜블럭들을 만들사람은 john0817이고, 기타 블록 제작자는 또라띠까입니다.%1', {
 color: EntryStatic.colorSet.block.default.HARDWAR,
 outerLine: EntryStatic.colorSet.block.darken.HARDWAR
 }, {
@@ -1381,4 +1384,4 @@ color: #ffff;
 </style>
 `)
 
-$('#entryCategoryAPI').append('ian볼럭'), alert("현재ian블럭은9.6.4입니다~(알림)"),console.log("ian블럭 작동이 시작되었습니다."),document.title = "Special_Block_entry";
+$('#entryCategoryAPI').append('스폐셜'), alert("현재스페셜블럭은1.6입니다~(알림)"),console.log("스페셜블럭 작동이 시작되었습니다."),document.title = "Special_Block_entry";
