@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>EntryJS Integration Example</title>
+
+    <!-- style sheet -->
+    <link href="path/to/lib/entry-tool/dist/entry-tool.css" rel="stylesheet" />
+    <link href="path/to/lib/entry-js/dist/entry.css" rel="stylesheet" />
+
+    <!--language-->
+    <script src="path/to/lib/entry-js/extern/lang/ko.js"></script>
+
+    <!-- 의존성 라이브러리들 -->
+    <script src="path/to/lib/lodash/dist/lodash.min.js"></script>
+    <script src="path/to/js/ws/locales.js"></script>
+    <script src="path/to/js/react18/react.production.min.js"></script>
+    <script src="path/to/js/react18/react-dom.production.min.js"></script>
+    <script src="path/to/lib/PreloadJS/lib/preloadjs-0.6.0.min.js"></script>
+    <script src="path/to/lib/EaselJS/lib/easeljs-0.8.0.min.js"></script>
+    <script src="path/to/lib/SoundJS/lib/soundjs-0.6.0.min.js"></script>
+    <script src="path/to/lib/SoundJS/lib/flashaudioplugin-0.6.0.min.js"></script>
+    <script src="path/to/lib/jquery/jquery.min.js"></script>
+    <script src="path/to/lib/jquery-ui/ui/minified/jquery-ui.min.js"></script>
+    <script src="path/to/lib/velocity/velocity.min.js"></script>
+    <script src="path/to/lib/codemirror/lib/codemirror.js"></script>
+    <script src="path/to/lib/codemirror/addon/hint/show-hint.js"></script>
+    <script src="path/to/lib/codemirror/addon/lint/lint.js"></script>
+    <script src="path/to/lib/codemirror/addon/selection/active-line.js"></script>
+    <script src="path/to/lib/codemirror/mode/javascript/javascript.js"></script>
+    <script src="path/to/lib/codemirror/addon/hint/javascript-hint.js"></script>
+    <script src="path/to/js/ws/jshint.js"></script>
+    <script src="path/to/lib/fuzzy/lib/fuzzy.js"></script>
+    <script src="path/to/js/ws/python.js"></script>
+    <script src="path/to/lib/socket.io-client/socket.io.js"></script>
+    <script src="path/to/lib/entry-js/extern/util/filbert.js"></script>
+    <script src="path/to/lib/entry-js/extern/util/CanvasInput.js"></script>
+    <script src="path/to/lib/entry-js/extern/util/ndgmr.Collision.js"></script>
+    <script src="path/to/lib/entry-js/extern/util/handle.js"></script>
+    <script src="path/to/lib/entry-js/extern/util/bignumber.min.js"></script>
+    <script src="path/to/lib/components-webfontloader/webfontloader.js"></script>
+    <script src="path/to/lib/entry-lms/dist/assets/app.js"></script>
+
+    <!-- Static JS -->
+    <script src="path/to/lib/entry-js/extern/util/static.js"></script>
+
+    <script src="path/to/lib/entry-tool/dist/entry-tool.js"></script>
+    <script src="path/to/lib/entry-paint/dist/static/js/entry-paint.js"></script>
+    <script src="path/to/external/sound/sound-editor.js"></script>
+
+    <!-- EntryJS 라이브러리 -->
+    <script src="path/to/lib/entry-js/dist/entry.min.js"></script>
+</head>
+<body>
+    <div id="entryContainer"></div>
+    <script>
+document.addEventListener("DOMContentLoaded", function() {
+        // EntryJS 초기화 코드
+        var initOption = {
+            type: 'workspace',
+            textCodingEnable: true,
+        };
+        Entry.creationChangedEvent = new Entry.Event(window);
+        Entry.init(document.getElementById('entryContainer'), initOption);
+        Entry.loadProject();
+    });
+    </script>
+</body>
+</html>
